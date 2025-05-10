@@ -68,4 +68,13 @@ Exploring the acceptance rate for Bar coupons based on user's frequency of visit
 	- irrespective of whether they are > 25 years, or have non kid as a passenger or if they are < 30 years
 	- just going to the bar > once/month increases the odds of accepting the coupon
 
+### Exploring all coupn types for age ranges
+Plotting the coupon types seperately for different age groups:
+![Bar based acceptance](./images/coupon_acceptance_Bar.png)
+![CoffeeHouse based acceptance](./images/coupon_acceptance_CoffeeHouse.png)
+![CarryAway based acceptance](./images/coupon_acceptance_CarryAway.png)
+![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_RestaurantLessThan20.png)
+![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant20To50.png)
+
+
 
