@@ -77,7 +77,47 @@ Plotting the coupon types seperately for different age groups and visit frequenc
 ![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant(20-50).png)
 
 - *21-30* has the most data points, followed by *31-40*
+- *<21* are probably non-adults (non-drivers) and their representation is almost non-existent
 - these two groups also have the highest acceptance-to-denial ratio meaning the odds of acceptance are much higher (particulalry in 21-40)
-- *CoffeeHouse, CarryOut and Cheap restaurants* have the highest acceptance rate for folks who visit 1-3 and 4-8
+- *CoffeeHouse, CarryOut and Cheap restaurants* have the highest acceptance rate for folks who visit 1-3 and 4-8 times
 - People who have never been to a *Bar or Coffee House* have the highest denial ratio for *21-30 and 31-40* age groups
+
+### Exploring all coupon types for destinations and visit frequency
+Plotting the coupon types seperately for different destinations and visit frequency:
+![Bar based acceptance](./images/coupon_acceptance_Bar_destination.png)
+![Coffee House based acceptance](./images/coupon_acceptance_Coffee%20House_destination.png)
+![Carry out & Take away based acceptance](./images/coupon_acceptance_Carry%20out%20%26%20Take%20away_destination.png)
+![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_Restaurant(_20)_destination.png)
+![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant(20-50)_destination.png)
+
+- people who are traveling to a *non-urgent destination* have higher odds of accepting a coupon
+- the probability is highest for *Coffee House*, *Carry Out* and *Cheap Restaurants*
+
+## Exploring all coupon types for income abd visit frequency
+Not adding the similar plots since they look repetitive. However the analysis states:
+- income groups *12500-37499* and *37500-74999* have much higher probability of rejecting a coupon for a Bar
+- the same income groups have a higher chance of accepting a *coffee house* coupon if they visit more frequently in general (1-3, 4-8, >8)
+ - carry out and cheap restaurants have a higher probabiliy of acceptance irrespective of income group. However the above income groups have the highest odds.
+- costly restaurants have a higher rate of rejection unless the income is more than 100K and visiting tendency is more frequent
+
+
+> We start to realize that with so many parameters its hard to manually determine which columns have a stronger correlation with the probability of coupon acceptance. Atleast to touch upon the other columns we do a plot of each remaining feature with the acceptance vs rejection count
+
+## Plotting the remaining features with acceptance vs rejection count to see if we find any patterns
+
+|
+![Education](./images/coupon_acceptance_education_count.png)|
+![Expiration](./images/coupon_acceptance_expiration_count.png)|
+![Gender](./images/coupon_acceptance_gender_count.png)|
+![Marital Status](./images/coupon_acceptance_maritalStatus_count.png)|
+![Children](./images/coupon_acceptance_has_children_count.png)|
+|-|-|-|-|-|
+|![Occupation](./images/coupon_acceptance_occupation_count.png)|![Passenger](./images/coupon_acceptance_passenger_count.png)|![Temperature](./images/coupon_acceptance_temperature_count.png)|![Weather](./images/coupon_acceptance_weather_count.png)|![Time](./images/coupon_acceptance_time_count.png)|
+
+- more data points (and probability of acceptance) for people traveling alone and with friends
+- sunny weather and also 80 degrees (both are similar) leads to more acceptance
+- 2pm and 6pm gives more odds of acceptance
+- coupons with 1d validity has mmore odds
+- gender doesnt necessarily play an important role
+- people who are single, or married (and also have children) have a higher chance of acceptance
 
