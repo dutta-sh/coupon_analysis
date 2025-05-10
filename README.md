@@ -29,7 +29,8 @@ Your final product should be a brief report that highlights the differences betw
 
 ### Overall
 The overall distribution **per coupon type** shows:
-![overall acceptance](./images/coupon_acceptance_overall.png)
+
+<img src="./images/coupon_acceptance_overall.png" alt="overall acceptance" width="400" height="300">
 
 - we have maximum data points for *coffee house* and *cheaper restaurants*
 - *carryout* and *cheaper restaurants* have a much higher chance of acceptance
@@ -38,7 +39,8 @@ The overall distribution **per coupon type** shows:
 
 ### Temperature
 Lets break up the acceptance distribution by temperature:
-![temperature based acceptance](./images/coupon_acceptance_temperature.png)
+
+<img src="./images/coupon_acceptance_temperature.png" alt="temperature based acceptance" width="900" height="300">
 
 - in general we have more data points for warmer weather
 - in cold weather coupon denial is much higer (except for carryout)
@@ -70,11 +72,12 @@ Exploring the acceptance rate for Bar coupons based on user's frequency of visit
 
 ### Exploring all coupon types for age ranges and visit frequency
 Plotting the coupon types seperately for different age groups and visit frequency:
-![Bar based acceptance](./images/coupon_acceptance_Bar.png)
-![Coffee House based acceptance](./images/coupon_acceptance_Coffee%20House.png)
-![Carry out & Take away based acceptance](./images/coupon_acceptance_Carry%20out%20%26%20Take%20away.png)
-![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_Restaurant(_20).png)
-![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant(20-50).png)
+
+<img src="./images/coupon_acceptance_Bar.png" alt="Bar" width="1500" height="300">
+<img src="./images/coupon_acceptance_Coffee%20House.png" alt="Coffee House" width="1500" height="300">
+<img src="./images/coupon_acceptance_Carry%20out%20%26%20Take%20away.png" alt="Carry out & Take away" width="1500" height="300">
+<img src="./images/coupon_acceptance_Restaurant(_20).png" alt="RestaurantLessThan20" width="1500" height="300">
+<img src="./images/coupon_acceptance_Restaurant(20-50).png" alt="Restaurant20To50" width="1500" height="300">
 
 - *21-30* has the most data points, followed by *31-40*
 - *<21* are probably non-adults (non-drivers) and their representation is almost non-existent
@@ -84,11 +87,12 @@ Plotting the coupon types seperately for different age groups and visit frequenc
 
 ### Exploring all coupon types for destinations and visit frequency
 Plotting the coupon types seperately for different destinations and visit frequency:
-![Bar based acceptance](./images/coupon_acceptance_Bar_destination.png)
-![Coffee House based acceptance](./images/coupon_acceptance_Coffee%20House_destination.png)
-![Carry out & Take away based acceptance](./images/coupon_acceptance_Carry%20out%20%26%20Take%20away_destination.png)
-![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_Restaurant(_20)_destination.png)
-![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant(20-50)_destination.png)
+
+<img src="./images/coupon_acceptance_Bar_destination.png" alt="Bar" width="900" height="300">
+<img src="./images/coupon_acceptance_Coffee%20House_destination.png" alt="Coffee House" width="900" height="300">
+<img src="./images/coupon_acceptance_Carry%20out%20%26%20Take%20away_destination.png" alt="Carry out & Take away" width="900" height="300">
+<img src="./images/coupon_acceptance_Restaurant(_20)_destination.png" alt="RestaurantLessThan20" width="900" height="300">
+<img src="./images/coupon_acceptance_Restaurant(20-50)_destination.png" alt="Restaurant20To50" width="900" height="300">
 
 - people who are traveling to a *non-urgent destination* have higher odds of accepting a coupon
 - the probability is highest for *Coffee House*, *Carry Out* and *Cheap Restaurants*
@@ -105,14 +109,9 @@ Not adding the similar plots since they look repetitive. However the analysis st
 
 ## Plotting the remaining features with acceptance vs rejection count to see if we find any patterns
 
-|
-![Education](./images/coupon_acceptance_education_count.png)|
-![Expiration](./images/coupon_acceptance_expiration_count.png)|
-![Gender](./images/coupon_acceptance_gender_count.png)|
-![Marital Status](./images/coupon_acceptance_maritalStatus_count.png)|
-![Children](./images/coupon_acceptance_has_children_count.png)|
+|<img src="./images/coupon_acceptance_education_count.png" alt="Education" width="300" height="300">|<img src="./images/coupon_acceptance_expiration_count.png" alt="Expiration" width="300" height="300">|<img src="./images/coupon_acceptance_gender_count.png" alt="Gender" width="300" height="300">|<img src="./images/coupon_acceptance_maritalStatus_count.png" alt="Marital Status" width="300" height="300">|<img src="./images/coupon_acceptance_has_children_count.png" alt="Children" width="300" height="300">|
 |-|-|-|-|-|
-|![Occupation](./images/coupon_acceptance_occupation_count.png)|![Passenger](./images/coupon_acceptance_passenger_count.png)|![Temperature](./images/coupon_acceptance_temperature_count.png)|![Weather](./images/coupon_acceptance_weather_count.png)|![Time](./images/coupon_acceptance_time_count.png)|
+|<img src="./images/coupon_acceptance_occupation_count.png" alt="Occupation" width="300" height="300">|<img src="./images/coupon_acceptance_passenger_count.png" alt="Passenger" width="300" height="300">|<img src="./images/coupon_acceptance_temperature_count.png" alt="Temperature" width="300" height="300">|<img src="./images/coupon_acceptance_weather_count.png" alt="Weather" width="300" height="300">|<img src="./images/coupon_acceptance_time_count.png" alt="Time" width="300" height="300">|
 
 - more data points (and probability of acceptance) for people traveling alone and with friends
 - sunny weather and also 80 degrees (both are similar) leads to more acceptance
