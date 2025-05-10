@@ -71,8 +71,8 @@ Exploring the acceptance rate for Bar coupons based on user's frequency of visit
 ### Exploring all coupon types for age ranges and visit frequency
 Plotting the coupon types seperately for different age groups and visit frequency:
 ![Bar based acceptance](./images/coupon_acceptance_Bar.png)
-![Coffee House based acceptance](./images/coupon_acceptance_Coffee House.png)
-![Carry out & Take away based acceptance](./images/coupon_acceptance_Carry out & Take away.png)
+![Coffee House based acceptance](./images/coupon_acceptance_Coffee%20House.png)
+![Carry out & Take away based acceptance](./images/coupon_acceptance_Carry%20out%20%26%20Take%20away.png)
 ![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_Restaurant(_20).png)
 ![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant(20-50).png)
 
