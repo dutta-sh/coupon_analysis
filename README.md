@@ -68,13 +68,16 @@ Exploring the acceptance rate for Bar coupons based on user's frequency of visit
 	- irrespective of whether they are > 25 years, or have non kid as a passenger or if they are < 30 years
 	- just going to the bar > once/month increases the odds of accepting the coupon
 
-### Exploring all coupn types for age ranges
-Plotting the coupon types seperately for different age groups:
+### Exploring all coupon types for age ranges and visit frequency
+Plotting the coupon types seperately for different age groups and visit frequency:
 ![Bar based acceptance](./images/coupon_acceptance_Bar.png)
-![CoffeeHouse based acceptance](./images/coupon_acceptance_CoffeeHouse.png)
-![CarryAway based acceptance](./images/coupon_acceptance_CarryAway.png)
-![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_RestaurantLessThan20.png)
-![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant20To50.png)
+![Coffee House based acceptance](./images/coupon_acceptance_Coffee House.png)
+![Carry out & Take away based acceptance](./images/coupon_acceptance_Carry out & Take away.png)
+![RestaurantLessThan20 based acceptance](./images/coupon_acceptance_Restaurant(_20).png)
+![Restaurant20To50 based acceptance](./images/coupon_acceptance_Restaurant(20-50).png)
 
-
+- *21-30* has the most data points, followed by *31-40*
+- these two groups also have the highest acceptance-to-denial ratio meaning the odds of acceptance are much higher (particulalry in 21-40)
+- *CoffeeHouse, CarryOut and Cheap restaurants* have the highest acceptance rate for folks who visit 1-3 and 4-8
+- People who have never been to a *Bar or Coffee House* have the highest denial ratio for *21-30 and 31-40* age groups
 
