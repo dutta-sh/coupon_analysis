@@ -26,6 +26,8 @@ This data comes to us from the UCI Machine Learning repository and was collected
 Your final product should be a brief report that highlights the differences between customers who did and did not accept the coupons.  To explore the data you will utilize your knowledge of plotting, statistical summaries, and visualization using Python. You will publish your findings in a public facing github repository as your first portfolio piece.
 
 ## Observations
+
+### Overall
 The overall distribution **per coupon type** shows:
 ![overall acceptance](./images/coupon_acceptance_overall.png)
 
@@ -33,3 +35,37 @@ The overall distribution **per coupon type** shows:
 - *carryout* and *cheaper restaurants* have a much higher chance of acceptance
 - *bars* have a higher chance of rejection
 - *coffee houses* and *costly restaurants* have an equal chance
+
+### Temperature
+Lets break up the acceptance distribution by temperature:
+![temperature based acceptance](./images/coupon_acceptance_temperature.png)
+
+- in general we have more data points for warmer weather
+- in cold weather coupon denial is much higer (except for carryout)
+- in warmer weather *cheap restaurants*, and *carrout & take away* acceptance spike up
+
+### Frequency of Visit
+Exploring the acceptance rate for Bar coupons based on user's frequency of visit:
+
+| Bar visit | Acceptance Rate |
+|:----------|:----------------|
+| > 3 | 0.768844 |
+| < 3 | 0.370618 |
+
+- people who visit a bar 3 times or more have a much higher chance of accepting a coupon (70%) compared to those who visit less than 3 times
+
+- multi variate 
+
+| Criteria | Rate |
+|:---------|:-----|
+| bar > once/month & age > 25 | 0.6952 |
+| bar > once/month & age < 30 | 0.7217 |
+| bar > once/month & passanger != Kids && occupation != Farming/Fishing/Forestry | 0.7132 |
+| bar > once/month & passanger != Kids && maritalStatus != Widowed | 0.7132 |
+
+- observations:
+	- for the bar scenario, we see people who go to bar > once/month always have ~ 70% probability of accepting the coupon
+	- irrespective of whether they are > 25 years, or have non kid as a passenger or if they are < 30 years
+	- just going to the bar > once/month increases the odds of accepting the coupon
+
+
