@@ -28,14 +28,17 @@ Your final product should be a brief report that highlights the differences betw
 ## Observations
 
 ### Overall
-The overall distribution **per coupon type** shows:
+The overall distribution **per coupon type** and **visit frequency** shows:
 
 <img src="./images/coupon_acceptance_overall.png" alt="overall acceptance" width="400" height="300">
+<img src="./images/visit_freq.png" alt="visit freq" width="400" height="300">
+
 
 - we have maximum data points for *coffee house* and *cheaper restaurants*
 - *carryout* and *cheaper restaurants* have a much higher chance of acceptance
 - *bars* have a higher chance of rejection
 - *coffee houses* and *costly restaurants* have an equal chance
+- people visiting *1-8* times have much higher chance of accepting a coupon for a given type of place
 
 ### Temperature
 Lets break up the acceptance distribution by temperature:
@@ -107,11 +110,11 @@ Not adding the similar plots since they look repetitive. However the analysis st
 
 > We start to realize that with so many parameters its hard to manually determine which columns have a stronger correlation with the probability of coupon acceptance. Atleast to touch upon the other columns we do a plot of each remaining feature with the acceptance vs rejection count
 
-## Plotting the remaining features with acceptance vs rejection count to see if we find any patterns
+## Plotting some more features with acceptance vs rejection count to see if we find any patterns
 
-|<img src="./images/coupon_acceptance_education_count.png" alt="Education" width="300" height="300">|<img src="./images/coupon_acceptance_expiration_count.png" alt="Expiration" width="300" height="300">|<img src="./images/coupon_acceptance_gender_count.png" alt="Gender" width="300" height="300">|<img src="./images/coupon_acceptance_maritalStatus_count.png" alt="Marital Status" width="300" height="300">|<img src="./images/coupon_acceptance_has_children_count.png" alt="Children" width="300" height="300">|
-|-|-|-|-|-|
-|<img src="./images/coupon_acceptance_occupation_count.png" alt="Occupation" width="300" height="300">|<img src="./images/coupon_acceptance_passenger_count.png" alt="Passenger" width="300" height="300">|<img src="./images/coupon_acceptance_temperature_count.png" alt="Temperature" width="300" height="300">|<img src="./images/coupon_acceptance_weather_count.png" alt="Weather" width="300" height="300">|<img src="./images/coupon_acceptance_time_count.png" alt="Time" width="300" height="300">|
+|<img src="./images/coupon_acceptance_expiration_count.png" alt="Expiration" width="300" height="300">|<img src="./images/coupon_acceptance_gender_count.png" alt="Gender" width="300" height="300">|<img src="./images/coupon_acceptance_maritalStatus_count.png" alt="Marital" width="300" height="300">|<img src="./images/coupon_acceptance_has_children_count.png" alt="Children" width="300" height="300">|
+|-|-|-|-|
+<img src="./images/coupon_acceptance_passenger_count.png" alt="Passenger" width="300" height="300">|<img src="./images/coupon_acceptance_temperature_count.png" alt="Temp" width="300" height="300">|<img src="./images/coupon_acceptance_weather_count.png" alt="Weather" width="300" height="300">|<img src="./images/coupon_acceptance_time_count.png" alt="Time" width="300" height="300">|
 
 - more data points (and probability of acceptance) for people traveling alone and with friends
 - sunny weather and also 80 degrees (both are similar) leads to more acceptance
@@ -119,4 +122,18 @@ Not adding the similar plots since they look repetitive. However the analysis st
 - coupons with 1d validity has mmore odds
 - gender doesnt necessarily play an important role
 - people who are single, or married (and also have children) have a higher chance of acceptance
+
+## Summary & Conclusion
+- There are multiple factors that help determine the odds of accepting a coupon
+- Its hard to determine which factor has a stringer influence over others
+- Weather, time of the day, income, frequency of visit - almost everyone of these have a correlation with the acceptance rate
+- Every type of coupon is unique:
+  	- Cheap restaurants and coffee houses are more acceptable to younger and low-mid income people
+	- Bars have a strong relationship with the frequency of visit
+	- Costly restaurants are more acceptable among higher income groups
+	- Warmer weather has a strong relationship with almost all coupon types
+	- No urgent destination also increases the odds of acceptance
+
+While we are able to determine many relationships, its hard to determine which ones exert more influence. At the same time, since there are so many parameters, its next to impossible to try out all possible combinations and come to a conclusion manually. The ability to use a ML model to analyze all the parameters would probably yield more useful results without extensive manual effort and in a shorter time span.
+
 
