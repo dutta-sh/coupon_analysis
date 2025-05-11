@@ -110,7 +110,7 @@ Not adding the similar plots since they look repetitive. However the analysis st
 
 > We start to realize that with so many parameters its hard to manually determine which columns have a stronger correlation with the probability of coupon acceptance. Atleast to touch upon the other columns we do a plot of each remaining feature with the acceptance vs rejection count
 
-## Plotting some more features with to find any patterns
+## Plotting some more features to find any patterns
 
 |<img src="./images/coupon_acceptance_expiration_count.png" alt="Expiration" width="300" height="300">|<img src="./images/coupon_acceptance_gender_count.png" alt="Gender" width="300" height="300">|<img src="./images/coupon_acceptance_maritalStatus_count.png" alt="Marital" width="300" height="300">|<img src="./images/coupon_acceptance_has_children_count.png" alt="Children" width="300" height="300">|
 |-|-|-|-|
