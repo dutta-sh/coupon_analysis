@@ -100,7 +100,7 @@ Plotting the coupon types seperately for different destinations and visit freque
 - people who are traveling to a *non-urgent destination* have higher odds of accepting a coupon
 - the probability is highest for *Coffee House*, *Carry Out* and *Cheap Restaurants*
 
-## Exploring all coupon types for income abd visit frequency
+## Exploring all coupon types for income and visit frequency
 Not adding the similar plots since they look repetitive. However the analysis states:
 - income groups *12500-37499* and *37500-74999* have much higher probability of rejecting a coupon for a Bar
 - the same income groups have a higher chance of accepting a *coffee house* coupon if they visit more frequently in general (1-3, 4-8, >8)
@@ -110,7 +110,7 @@ Not adding the similar plots since they look repetitive. However the analysis st
 
 > We start to realize that with so many parameters its hard to manually determine which columns have a stronger correlation with the probability of coupon acceptance. Atleast to touch upon the other columns we do a plot of each remaining feature with the acceptance vs rejection count
 
-## Plotting some more features with acceptance vs rejection count to see if we find any patterns
+## Plotting some more features with to find any patterns
 
 |<img src="./images/coupon_acceptance_expiration_count.png" alt="Expiration" width="300" height="300">|<img src="./images/coupon_acceptance_gender_count.png" alt="Gender" width="300" height="300">|<img src="./images/coupon_acceptance_maritalStatus_count.png" alt="Marital" width="300" height="300">|<img src="./images/coupon_acceptance_has_children_count.png" alt="Children" width="300" height="300">|
 |-|-|-|-|
